@@ -1,6 +1,7 @@
-import Button from "./components/ui/Button";
-import Card from "./components/ui/Card";
-import { Form, TextInput } from "./components/ui/form";
+import Button from "../components/ui/Button";
+import Card from "../components/ui/Card";
+import  Form from "../components/ui/Form";
+import TextInput from '../components/ui/TextInput'
 
 
 export default function Home() {
