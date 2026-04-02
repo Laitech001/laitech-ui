@@ -2,12 +2,15 @@ type TextInputProps = {
   id?: string;
   type?: string;
   placeholder?: string;
+  name?: string;
+  value?: string | number;
+  accept?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   size?: 'small' | 'medium' | 'large';
   className?: string;
 }
 
-export default function TextInput({id, type = 'text', placeholder, onChange, size = 'medium', className }: TextInputProps) {
+export default function TextInput({id, type = 'text', placeholder, name, value, accept, onChange, size = 'medium', className }: TextInputProps) {
 
   const sizeClasses  = {
     small: 'px-2 py-1 text-sm',
@@ -21,6 +24,9 @@ export default function TextInput({id, type = 'text', placeholder, onChange, siz
       id={id}
       type={type}
       placeholder={placeholder}
+      name={name}
+      value={value}
+      accept={accept}
       onChange={onChange}
       className={classes}
     />
