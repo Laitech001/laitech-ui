@@ -10,7 +10,7 @@ type TextInputProps = {
   className?: string;
 }
 
-export default function TextInput({id, type = 'text', placeholder, name, value, accept, onChange, size = 'medium', className }: TextInputProps) {
+export default function TextInput({id, type, placeholder, name, value, accept, onChange, size = 'medium', className }: TextInputProps) {
 
   const sizeClasses  = {
     small: 'px-2 py-1 text-sm',
@@ -18,7 +18,7 @@ export default function TextInput({id, type = 'text', placeholder, name, value, 
     large: 'px-6 py-3 text-lg',
   }
 
-  const classes = `${sizeClasses[size]} border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${className || ''}`;
+  const classes = `${sizeClasses[size]} w-full mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${className || ''}`;
   return (
     <input
       id={id}

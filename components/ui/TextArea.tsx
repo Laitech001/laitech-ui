@@ -3,13 +3,12 @@ type TextAreaProps = {
   placeholder?: string;
   name?: string;
   value?: string | number;
-  accept?: string;
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   size?: 'small' | 'medium' | 'large';
   className?: string;
 }
 
-export default function TextInput({id, placeholder, name, value, accept, onChange, size = 'medium', className }: TextAreaProps) {
+export default function TextInput({id, placeholder, name, value, onChange, size = 'medium', className }: TextAreaProps) {
 
   const sizeClasses  = {
     small: 'px-2 py-1 text-sm',
