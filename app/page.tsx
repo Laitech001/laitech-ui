@@ -2,6 +2,7 @@ import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
 import  Form from "../components/ui/Form";
 import TextInput from '../components/ui/TextInput'
+import Modal from "@/components/ui/Modal";
 
 
 export default function Home() {
